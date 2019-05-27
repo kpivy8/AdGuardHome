@@ -26,3 +26,4 @@ require (
 	gopkg.in/asaskevich/govalidator.v4 v4.0.0-20160518190739-766470278477
 	gopkg.in/yaml.v2 v2.2.1
 )
+replace github.com/AdguardTeam/golibs v0.1.3 => github.com/kpivy8/golibs v0.1.5-0.20190526150821-ff0344fc7a54

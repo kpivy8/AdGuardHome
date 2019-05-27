@@ -4,8 +4,8 @@ set -eE
 set -o pipefail
 set -x
 
-DOCKERFILE="Dockerfile.travis"
-IMAGE_NAME="adguard/adguardhome"
+DOCKERFILE="dockerfile.travis"
+IMAGE_NAME="kpivy8/adguardhome"
 
 if [[ "${TRAVIS_BRANCH}" == "master" ]]
 then
@@ -19,7 +19,7 @@ build_image() {
 
     # See https://hub.docker.com/r/multiarch/alpine/tags
     case "${GOARCH}" in
-        arm64)
+        arm64):
            alpineArch='arm64-edge'
            imageArch='arm64'
            ;;
